@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">MySqlExApp</string>
+    <string name="template">&lt;!DOCTYPE html &gt;
+&lt;html lang=\"ru\"&gt;
+    &lt;head&gt;
+        &lt;meta charset=\"utf-8\" /&gt;
+        &lt;style type=\"text/css\"&gt;
+  .input         { font-family:Verdana,Arial,Helvetica,sans-serif; font-size:8pt }
+
+.form        { border:1px solid; background-color:#FFF5F5; }
+.base        { height:100%; width:100%; text-align:center; vertical-align:middle; }
+.question        { background-color:#DDDDDD; padding:10px 10px 10px 10px; vertical-align:middle; text-align:justify; cursor:help; }
+FO        { COLOR:#000000; FONT-FAMILY:Arial,Helvetica; FONT-SIZE:13pt; FONT-WEIGHT:bold;
+          LINE-HEIGHT:20px; TEXT-ALIGN:left; text-decoration: none}
+H1        { FONT-SIZE: 16pt; FONT-FAMILY: Arial,Helvetica }
+H2        { COLOR:#000000; FONT-FAMILY:Arial,Helvetica; FONT-SIZE:13pt; FONT-WEIGHT:bold; LINE-HEIGHT:20px; TEXT-ALIGN:center; text-decoration:none }
+H3        { FONT-FAMILY:Arial,Helvetica; FONT-SIZE:15px; FONT-WEIGHT:bold; LINE-HEIGHT:18px; TEXT-ALIGN:center }
+H4        { FONT-FAMILY:Arial,Helvetica; FONT-SIZE:15px; FONT-WEIGHT:bold; TEXT-ALIGN:center }
+
+P        { COLOR:black; FONT-FAMILY:Verdana,Arial,Helvetica; FONT-SIZE:12px; FONT-WEIGHT:normal; TEXT-ALIGN:justify; TEXT-DECORATION:none }
+BODY        { BACKGROUND:#F5F5F5; MARGIN:4px 4px 0px;
+          COLOR:black; FONT-FAMILY:Verdana,Arial,Helvetica; FONT-SIZE:12px;
+          FONT-WEIGHT:normal; TEXT-ALIGN:justify; TEXT-DECORATION:none }
+
+DIV        { COLOR:black; FONT-FAMILY:Verdana,Arial,Helvetica; FONT-SIZE:12px; FONT-WEIGHT:normal; TEXT-ALIGN:justify; TEXT-DECORATION:none }
+DIV.rat        { COLOR:#0000FF; FONT-FAMILY:Verdana,Arial,Helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; TEXT-ALIGN:left; TEXT-DECORATION:none; display:none; position:relative; }
+
+TABLE        { COLOR:black; FONT-FAMILY:Verdana,Arial,Helvetica; FONT-SIZE:12px; FONT-WEIGHT:normal; TEXT-ALIGN:justify; TEXT-DECORATION:none }
+
+.dt TH        { background-color:#D9E3D8; text-align:center }
+.st TH        { background-color:#D3DCE3; text-align:center }
+
+.dt0        { background-color:#CCCCCC; }
+.dt1        { background-color:#DDDDDD; }
+
+.er        { background-color:#F3D3D3; }
+
+BLOCKQUOTE        { TEXT-ALIGN:left }
+CITE        { BACKGROUND:#DDDDDD; MARGIN:4px 4px 0px; COLOR:red; FONT-FAMILY:Verdana,Arial,Helvetica; FONT-SIZE:12px; FONT-WEIGHT:normal; TEXT-ALIGN:justify; TEXT-DECORATION:none; FONT-STYLE:normal }
+I        { FONT-STYLE: italic }
+I.cmnt        { FONT-STYLE: italic; color:gray; font-size:9px}
+
+SUP.newa        { color: #DE8352; font-size:11px;}
+
+A:link                { font-family:Verdana,Arial,Helvetica; font-size:9pt; text-decoration:none; }
+A:visited        { font-family:Verdana,Arial,Helvetica; font-size:9pt; text-decoration:none; color:#0000FF }
+A:hover                { font-family:Verdana,Arial,Helvetica; font-size:9pt; text-decoration:underline; color:#FF0000 }
+
+/* forum links: not posted here, posted here */
+A.noph:link        { color:#777777;}
+A.noph:hover        { color:gray; text-decoration:underline;}
+A.noph:visited        { color:gray;}
+A.ph:link        { color:black;}
+A.ph:hover        { color:black; text-decoration:underline;}
+A.ph:visited        { color:black;}
+
+A.none:link        { text-decoration:none; color:black; }
+A.none:visited        { text-decoration: none; color:black; }
+A.none:hover        { text-decoration: none; color:black; }
+
+A.top10:link        { font-family:Verdana,Arial,Helvetica; font-size:9pt; text-decoration:none; color:black }
+A.top10:visited        { font-family:Verdana,Arial,Helvetica; font-size:9pt; color:black }
+A.top10:hover        { font-family:Verdana,Arial,Helvetica; font-size:9pt; text-decoration:underline; color:black; font-weight:bold }
+
+LI        { FONT-FAMILY:Tahoma,Arial,Helvetica; FONT-SIZE:12px; LINE-HEIGHT:13px; TEXT-ALIGN:left }
+LI.ul        { FONT-FAMILY:Tahoma,Arial,Helvetica; FONT-SIZE:12px; LINE-HEIGHT:13px; LIST-STYLE:square; TEXT-ALIGN:left }
+LI.ol        { FONT-FAMILY:Tahoma,Arial,Helvetica; FONT-SIZE:12px; LINE-HEIGHT:13px; TEXT-ALIGN:left }
+.quotemain{
+        background: #FAFCFE;
+        border: 1px dotted #000;
+        border-left: 4px solid #8394B2;
+        border-top: 1px dotted #000;
+        color: purple;
+        padding: 4px;
+        margin: auto auto auto auto;
+}
+        &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    </string>
+    <string name="connection_error">Данные не получены</string>
+    <string name="btn_reload_txt">Перезагрузить данные</string>
+    <string name="template_for_learn">&lt;!DOCTYPE html &gt;
+&lt;html lang=\"ru\"&gt;
+    &lt;head&gt;
+        &lt;meta charset=\"utf-8\" /&gt;
+        &lt;style type=\"text/css\"&gt;
+        table#excercises {
+/*	width: 800px;
+
+	position: relative;
+	left: 50%;
+	margin-left: -400px;*/
+}
+
+div#resPlace {
+	/*text-align: center;
+	float: left;*/
+	/*width: 85%;*/
+}
+
+div#resPlace div {
+	margin-left: 20px;
+}
+
+table.userResultTable {
+	float: left;
+	border: solid 1px;
+	margin-right: 20px;
+}
+
+table.userResultTable td.diff {
+	background: #a55;
+}
+
+table.testResultTable {
+	border: solid 1px;
+}
+
+div#helpTopics {
+	margin-top: 20px;
+}
+
+td#queryArea button {
+	margin: 0 0 5px 20px;
+}
+#queryArea, #queryButtons {
+	padding-left: 20px;
+}
+
+textarea#usrQuery {
+	float: left;
+	width: 500px;
+}
+div#choiseDb {
+	float: left;
+	margin-left: 20px;
+}
+
+#btnCls, #btnMax, #choiseDb select {
+	width: 100px;
+}
+
+/* Rating table */
+div#divRating {
+	width: 200px;
+	text-align: center;
+	float: left;
+	background: #f5f5f5;
+	border: solid thin;
+}
+
+table#tblRating {
+	text-align: center;
+	font-size: 85%;
+}
+
+table#tblRating tr th {
+	text-decoration: underline;
+}
+table#tblRating tr.before {
+	color: #004080;
+}
+table#tblRating tr.after {
+	color: #004000;
+}
+table#tblRating tr.current {
+	color: #800040;
+}
+table#tblRating tr.current td {
+	border: #800040 solid thin;
+}
+/* end Rating table */
+
+/** Login form */
+.login {position: relative; width: 300px; left: 50%; margin-left:-150px;}
+.search input.submit  {width: 100px; margin-left: 100px;}
+.login input.submit {float: left;}
+.form dt{
+  padding: 0;
+  margin: 0.7em 1em 0.5em 0;
+  width: 25%;
+  float: left;
+  clear: left;
+  text-align: right;
+}
+.form dd{
+  margin: 0;
+  padding: 0.5em 0;
+  width: 70%;
+  float: left;
+/*  *float: none;  */ /* hack for IE 6-7 - better to keep in separate file */
+}
+.form {background: #F5F5F5; border: none;}
+
+/** End login form **/
+
+        &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    </string>
+    <string name="title_activity_ex">ExActivity</string>
+    <string name="tab_text_1">Условие</string>
+    <string name="tab_text_2">Код</string>
+    <string name="tab_text_3">Выполнение</string>
+    <string name="tab_text_4">Форум</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
